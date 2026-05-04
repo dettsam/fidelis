@@ -1,0 +1,19 @@
+name = "fidelis-subdomains"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# Serve files from the assets/ directory on assets.fdl.is
+[assets]
+directory = "./assets"
+
+[[routes]]
+pattern = "go.fdl.is/*"
+zone_name = "fdl.is"
+
+[[routes]]
+pattern = "parish.fdl.is/*"
+zone_name = "fdl.is"
+
+[[routes]]
+pattern = "assets.fdl.is/*"
+zone_name = "fdl.is"
